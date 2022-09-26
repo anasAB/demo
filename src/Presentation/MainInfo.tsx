@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
 import { getFirstName, getUserBirthdate, getUserImg, getUserRegisteredDate, getUserTitle } from '../Selectors/userSelectors'
- 
+
 const MainInfo = () => {
 
     const userTitle = useSelector(getUserTitle)
@@ -13,8 +13,8 @@ const MainInfo = () => {
     var month = new Date(userBirthdate).getUTCMonth() + 1;
     var day = new Date(userBirthdate).getUTCDate();
     var year = new Date(userBirthdate).getUTCFullYear();
-    
-    
+
+
     return (
         <div id="profile-overview">
             <figure>
@@ -22,11 +22,11 @@ const MainInfo = () => {
             </figure>
             <div id="profile-content">
                 <h1>{userFirstName}</h1>
-                <p id="member-since">Mitglied seit {new Date(userRegisteredDate).getUTCFullYear() }</p>
+                <p id="member-since">Mitglied seit {new Date(userRegisteredDate).getUTCFullYear()}</p>
                 <div className="details">
                     <p><span>Titel</span>{userTitle}</p>
                     <p><span>Geschlecht</span>weiblich</p>
-                    <p><span>Geburtstag</span>{day+'.'+ month+'.'+year}</p>
+                    <p><span>Geburtstag</span>{day + '.' + month + '.' + year}</p>
                 </div>
             </div>
             <div id="buttons">

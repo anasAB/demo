@@ -1,26 +1,25 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logImg from '../img/logo.png'
 import {
-    faCoffee,
-    faHouseUser
-  } from "@fortawesome/free-solid-svg-icons";
+    faAddressBook, faHouseUser, faUserGroup, faUserPlus, faEuroSign, faServer, faGear
+} from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
     return (
         <div id="header">
-            <div id="logo"><img src={logImg} alt='log'/></div>
+            <div id="logo"><img src={logImg} alt='log' /></div>
             <div id="navigation-header">
                 <ul>
-                    <li><a href="#"><FontAwesomeIcon icon={faHouseUser} color="greay" size="2x" />Home</a></li>
-                    <li className="selected"><a href="#"><span className="placeholder-icon"></span>Kontakte</a></li>
-                    <li><a href="#"><span className="placeholder-icon"></span>Gruppen</a></li>
-                    <li><a href="#"><span className="placeholder-icon"></span>Aufnahme Assistent</a></li>
-                    <li><a href="#"><span className="placeholder-icon"></span>Rechnungen</a></li>
-                    <li><a href="#"><span className="placeholder-icon"></span>Stammdaten</a></li>
-                    <li><a href="#"><span className="placeholder-icon"></span>Konfiguration</a></li>
+                    <li><a href="#"><FontAwesomeIcon icon={faHouseUser} /></a> Home</li>
+                    <li className="selected"><a href="#"><FontAwesomeIcon icon={faAddressBook} /></a>Kontakte</li>
+                    <li><a href="#"><FontAwesomeIcon icon={faUserGroup} /></a>Gruppen</li>
+                    <li><a href="#"><FontAwesomeIcon icon={faUserPlus} /></a>Aufnahme Assistent</li>
+                    <li><a href="#"><FontAwesomeIcon icon={faEuroSign} /></a>Rechnungen</li>
+                    <li><a href="#"><FontAwesomeIcon icon={faServer} /></a>Stammdaten</li>
+                    <li><a href="#"><FontAwesomeIcon icon={faGear} /></a>Konfiguration</li>
                 </ul>
             </div>
-            <div id="search"><input type="text" placeholder="Suchen"/></div>
+            <div id="search"><input type="text" placeholder="Suchen" /></div>
             <div id="quicklinks">
                 <ul>
                     <li><a href="#"><span className="placeholder-icon"></span></a></li>

@@ -1,5 +1,3 @@
-import React from 'react';
-import './App.css';
 import Header from './Presentation/Header';
 import MainContactPage from './Presentation/MainContactPage';
 

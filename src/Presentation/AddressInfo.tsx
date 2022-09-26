@@ -1,6 +1,5 @@
 import { useSelector } from 'react-redux'
 import { getCity, getCountry, getPlz, getStreetName } from '../Selectors/userSelectors'
-import '../css/style.css'
 
 
 const AddressInfo = () => {

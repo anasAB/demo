@@ -40,16 +40,10 @@ export const userSlice = createSlice({
                 state[0][key] = payLoad[key]
             }
         },
-
-        createUsers: (state: Users, action: { payload: IUser }) => {
-            console.log('### Create New User ACTION');
-            state.push(action.payload)
-        },
-
     },
 })
 
-export const { setUserState, editUserInfo, createUsers } = userSlice.actions
+export const { setUserState, editUserInfo } = userSlice.actions
 
 export default userSlice.reducer
 
